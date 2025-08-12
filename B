@@ -9,7 +9,6 @@ private:
 	int Lado0;
     int Lado1;
     int Lado2;
-    int Medidor = 0;
 	
 public:
 	void Atributos(){
@@ -21,21 +20,14 @@ public:
 				   cin>>Lado2;
                   }
 	void LadoMayor(){
-           if(Lado0 > Lado1){medidor = B + 1;}
-           if(Lado0 > Lado2){medidor = B + 1;}
-
-           if(medidor == 2){cout<<"El Primer Lado es mayor"<<endl;}
-           else medidor= 0;if(Lado1 > Lado0){medidor = B + 1;
-                if(Lado1 > Lado2){medidor = B + 1;}
-
-           if(medidor == 2){cout<<"El Segundo Lado es mayor"<<endl;}
-                                            }
-           else medidor= 0;if(Lado2 > Lado0){medidor = B + 1;
-                if(Lado2 > Lado1){medidor = B + 1;}
-
-           if(medidor == 2){cout<<"El Tercer Lado es mayor"<<endl;}
-                                            }
+           if(Lado0 > Lado1 && Lado0 > Lado2){cout<<"El Primer Lado es mayor"<<endl;}
+           if(Lado1 > Lado0 && Lado1 > Lado2){cout<<"El Segundo Lado es mayor"<<endl;}
+           if(Lado2 > Lado1 && Lado2 > Lado1){cout<<"El Tercer Lado es mayor"<<endl;}
 	                }
+     void Equilátero(){
+           if(Lado0==Lado1 && Lado0==Lado2){cout<<"es equilátero"<<endl;}
+           else cout<<"no es equilátero"<<endl;
+	                  }
 	};
 
 int main(int argc, char *argv[])
@@ -43,4 +35,5 @@ int main(int argc, char *argv[])
 	Triangulo Zona;
 	Zona.Atributos();
 	Zona.LadoMayor();
+    Zona.Equilatero();
 }

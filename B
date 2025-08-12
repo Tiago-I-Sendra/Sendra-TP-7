@@ -5,12 +5,13 @@
 class Triangulo
 	{
 	
-	private:
+private:
 	int Lado0;
-  int Lado1;
-  int Lado2;
+    int Lado1;
+    int Lado2;
+    int Medidor = 0;
 	
-	public:
+public:
 	void Atributos(){
            cout<<"Primer Lado:";
 				   cin>>Lado0;
@@ -20,7 +21,20 @@ class Triangulo
 				   cin>>Lado2;
                   }
 	void LadoMayor(){
-           
+           if(Lado0 > Lado1){medidor = B + 1;}
+           if(Lado0 > Lado2){medidor = B + 1;}
+
+           if(medidor == 2){cout<<"El Primer Lado es mayor"<<endl;}
+           else medidor= 0;if(Lado1 > Lado0){medidor = B + 1;
+                if(Lado1 > Lado2){medidor = B + 1;}
+
+           if(medidor == 2){cout<<"El Segundo Lado es mayor"<<endl;}
+                                            }
+           else medidor= 0;if(Lado2 > Lado0){medidor = B + 1;
+                if(Lado2 > Lado1){medidor = B + 1;}
+
+           if(medidor == 2){cout<<"El Tercer Lado es mayor"<<endl;}
+                                            }
 	                }
 	};
 

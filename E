@@ -1,0 +1,50 @@
+5)suma,resta,multiplicación y división.
+
+#include <iostream.h>
+#include <string.h>
+class Operaciones
+	{
+	
+private:
+	  int Unidad0;
+    int Unidad1;
+	  int Cal;
+public:
+	void Suma(){
+           cin>>Unidad0;
+           cin>>Unidad1;
+
+           Cal = Unidad0 + Unidad1;
+           cout<<Unidad0<<" + "<<Unidad1<<":"<<Cal<<endl;
+              }
+   void Resta(){
+           cin>>Unidad0;
+           cin>>Unidad1;
+
+           Cal = Unidad0 - Unidad1;
+           cout<<Unidad0<<" - "<<Unidad1<<":"<<Cal<<endl;
+                  }
+    void Multiplicación(){
+           cin>>Unidad0;
+           cin>>Unidad1;
+
+           Cal = Unidad0 * Unidad1;
+           cout<<Unidad0<<" * "<<Unidad1<<":"<<Cal<<endl;
+                  }
+    void Divicion(){
+           cin>>Unidad0;
+           cin>>Unidad1;
+
+           Cal = Unidad0 / Unidad1;
+           cout<<Unidad0<<" / "<<Unidad1<<":"<<Cal<<endl;
+              }
+	};
+
+int main(int argc, char *argv[])
+{
+	Triangulo Zona;
+	Zona.Suma();
+	Zona.Resta();
+  Zona.Multiplicacion();
+  Zona.Divicion();
+}

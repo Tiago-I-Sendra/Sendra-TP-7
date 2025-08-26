@@ -1,0 +1,35 @@
+4)nombre y sueldo
+
+#include <iostream.h>
+#include <string.h>
+class Triangulo
+	{
+	
+private:
+	  int Nombre;
+    int Sueldo;
+	
+public:
+	void Atributos(){
+           cout<<"Nombre:";
+				   cin>>Nombre;
+				   cout<<"Sueldo:";
+				   cin>>Sueldo;
+                  }
+	void Mostrar(){
+            cout<<Nombre<<endl;
+            cout<<Sueldo<<endl;
+	                }
+     void Impuestos(){
+           if(Sueldo>=3000){cout<<"debe pagar impuestos s"<<endl;}
+           else cout<<"no debe pagar impuestos"<<endl;
+	                  }
+	};
+
+int main(int argc, char *argv[])
+{
+	Triangulo Zona;
+	Zona.Atributos();
+	Zona.Mostrar();
+  Zona.Impuestos();
+}

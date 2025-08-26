@@ -27,15 +27,14 @@ public:
             cout<<"su perimetro es:"<<L<<endl;
 	                }
      void Superficie(){
-           if(Lado0==Lado1 && Lado0==Lado2){cout<<"es equilátero"<<endl;}
-           else cout<<"no es equilátero"<<endl;
+            L = Lado0 * Lado0;
 	                  }
 	};
 
 int main(int argc, char *argv[])
 {
-	Triangulo Zona;
+	Cuadrado Zona;
 	Zona.Atributos();
 	Zona.Perimetro();
-    Zona.Equilatero();
+    Zona.Superficie();
 }

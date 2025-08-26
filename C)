@@ -6,10 +6,11 @@ class Cuadrado
 	{
 	
 private:
-	  int Lado0;
+    int L;
+	int Lado0;
     int Lado1;
     int Lado2;
-	  int Lado3;
+	int Lado3;
 public:
 	void Atributos(){
            cout<<"Primer Lado:";
@@ -21,12 +22,11 @@ public:
            cout<<"Cuarto Lado:";
 				   cin>>Lado3;
                   }
-	void LadoMayor(){
-           if(Lado0 > Lado1 && Lado0 > Lado2){cout<<"El Primer Lado es mayor"<<endl;}
-           if(Lado1 > Lado0 && Lado1 > Lado2){cout<<"El Segundo Lado es mayor"<<endl;}
-           if(Lado2 > Lado1 && Lado2 > Lado1){cout<<"El Tercer Lado es mayor"<<endl;}
+	void Perimetro(){
+            L = Lado0 + Lado1 + Lado2 + Lado3;
+            cout<<"su perimetro es:"<<L<<endl;
 	                }
-     void Equilátero(){
+     void Superficie(){
            if(Lado0==Lado1 && Lado0==Lado2){cout<<"es equilátero"<<endl;}
            else cout<<"no es equilátero"<<endl;
 	                  }
@@ -36,6 +36,6 @@ int main(int argc, char *argv[])
 {
 	Triangulo Zona;
 	Zona.Atributos();
-	Zona.LadoMayor();
+	Zona.Perimetro();
     Zona.Equilatero();
 }

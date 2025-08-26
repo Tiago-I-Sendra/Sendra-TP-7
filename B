@@ -24,7 +24,7 @@ public:
            if(Lado1 > Lado0 && Lado1 > Lado2){cout<<"El Segundo Lado es mayor"<<endl;}
            if(Lado2 > Lado1 && Lado2 > Lado1){cout<<"El Tercer Lado es mayor"<<endl;}
 	                }
-     void Equilátero(){
+     void Equilatero(){
            if(Lado0==Lado1 && Lado0==Lado2){cout<<"es equilátero"<<endl;}
            else cout<<"no es equilátero"<<endl;
 	                  }
